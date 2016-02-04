@@ -4,9 +4,10 @@
 			<div class="row" id="gameViewHead">
 				<h1>{{gameData.name}}</h1>
 			</div>
-			<div>
-				<br/>
-			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
 			<div class="row" id="gameViewBody">
 				<div id="{{gameData.formattedName}}Overlay">
 					<div class="{{gameData.formattedName}}Square" id="{{gameData.formattedName}}-a0"></div>
@@ -109,6 +110,26 @@
 					<div class="{{gameData.formattedName}}Square" id="{{gameData.formattedName}}-j7"></div>
 					<div class="{{gameData.formattedName}}Square" id="{{gameData.formattedName}}-j8"></div>
 					<div class="{{gameData.formattedName}}Square" id="{{gameData.formattedName}}-j9"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col=md=12">
+					<div class="row" ng-repeat="piece in gameData.pieceDefinitions">
+						<div class="col-md-6">
+							<h4>{{ucFirst(piece.name)}}</h4>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col {{gameData.formattedName}}Token" id="{{piece.name}}Token{{$index + 1}}" ng-repeat="i in pieceCount(piece.count) track by $index">
+									<span class="{{gameData.formattedName}}TokenLabel">
+										<h3>{{ucTokenLabel(piece.name)}}</h3>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

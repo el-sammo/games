@@ -46,6 +46,18 @@
 			console.log(err);
 		});
 
+		$scope.ucFirst = function(str) {
+			return str.charAt(0).toUpperCase() + str.slice(1);
+		}
+
+		$scope.ucTokenLabel = function(str) {
+			return str.charAt(0).toUpperCase();
+		}
+
+		$scope.pieceCount = function(num) {
+			return new Array(num);   
+		}
+
 	}
 
 }());
