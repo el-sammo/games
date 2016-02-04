@@ -10,14 +10,12 @@
 	
 	controller.$inject = [
 		'$scope', '$rootScope', 'signupPrompter',
-		'lotteryMgmt', 'drawingMgmt', 'numberMgmt', 
-		'customerMgmt'
+		'customerMgmt', 'gameMgmt'
 	];
 
 	function controller(
 		$scope, $rootScope, signupPrompter,
-		lotteryMgmt, drawingMgmt, numberMgmt,
-		customerMgmt
+		customerMgmt, gameMgmt
 	) {
 
 		signupPrompter.prompt();
@@ -25,9 +23,9 @@
 		var getSessionPromise = customerMgmt.getSession();
 		getSessionPromise.then(function(sessionData) {
 
-			var getLotteriesPromise = lotteryMgmt.getLotteries();
-			getLotteriesPromise.then(function(lotteryData) {
-				$scope.lotteries = lotteryData;
+			var getGamesPromise = gameMgmt.getGames();
+			getGamesPromise.then(function(gameData) {
+				$scope.games = gameData;
 			});
 
 			if(!sessionData.customerId) {

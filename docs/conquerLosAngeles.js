@@ -1,7 +1,7 @@
 db = new Mongo().getDB('games');
 
-var stratego = {
-	name: 'Stratego',
+var conquerLosAngeles = {
+	name: 'Conquer Los Angeles',
 	type: 'board',
 	genre: 'strategy',
 	playerCount: 2,
@@ -402,7 +402,7 @@ function addGame(game) {
 	db.games.insert(game);
 }
 
-addGame(stratego);
+addGame(conquerLosAngeles);
 
 
 

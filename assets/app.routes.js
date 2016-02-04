@@ -50,38 +50,12 @@
 
 
 		///
-		// Lottery
+		// Game
 		///
 
-		$routeProvider.when('/lottery/:id', {
-			controller: 'LotteryViewController',
-			templateUrl: '/templates/lotteryView.html'
-		});
-
-
-		///
-		// Drawing
-		///
-
-		$routeProvider.when('/drawing/:id', {
-			controller: 'DrawingViewController',
-			templateUrl: '/templates/drawingView.html'
-		});
-
-
-		$routeProvider.when('/drawing/add/:id', {
-			controller: 'DrawingAddController',
-			templateUrl: '/templates/drawingAdd.html'
-		});
-
-
-		///
-		// Numbers
-		///
-
-		$routeProvider.when('/numbers/:id', {
-			controller: 'NumberViewController',
-			templateUrl: '/templates/numberView.html'
+		$routeProvider.when('/game/:id', {
+			controller: 'GamePlayController',
+			templateUrl: '/templates/gamePlay.html'
 		});
 
 

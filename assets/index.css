@@ -425,54 +425,600 @@ td {
 	padding-bottom: 24px;
 }
 
-#lotteryViewMain {
-	top: 34px;
+#gameViewMain {
+	top: -10px;
 	background-color: #fff;
 	position: relative;
 }
 
-#lotteryViewHead {
+#gameViewHead {
 	text-align: center;
 	border-bottom: 1px solid #C0C2FF;
 }
 
-#lotteryViewBody {
-	padding-top: 4px;
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-bottom: 24px;
+#StrategoOverlay {
+	width: 500px;
+	height: 500px;
+	background-image: url("images/los_angeles.png");
 }
 
-#drawingViewMain {
-	top: 34px;
-	background-color: #fff;
+#ConquerLosAngelesOverlay {
+	width: 500px;
+	height: 500px;
+	border-left: 1px solid blue;
+	border-top: 1px solid blue;
+	background-image: url("images/los_angeles.png");
 	position: relative;
 }
 
-#drawingViewHead {
-	text-align: center;
-	border-bottom: 1px solid #C0C2FF;
+.ConquerLosAngelesSquare {
+	width: 50px;
+	height: 50px;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
 }
 
-#drawingViewBody {
-	padding-top: 4px;
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-bottom: 24px;
+#ConquerLosAngeles-a0 {
+	top: 0px;
+	left: 0px;
+	position: absolute;
 }
 
-#numberViewMain {
-	top: 34px;
-	background-color: #fff;
-	position: relative;
+#ConquerLosAngeles-a1 {
+	top: 0px;
+	left: 50px;
+	position: absolute;
 }
 
-#numberViewHead {
-	text-align: center;
-	border-bottom: 1px solid #C0C2FF;
+#ConquerLosAngeles-a2 {
+	top: 0px;
+	left: 100px;
+	position: absolute;
 }
 
-#numberViewBody {
+#ConquerLosAngeles-a3 {
+	top: 0px;
+	left: 150px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-a4 {
+	top: 0px;
+	left: 200px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-a5 {
+	top: 0px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-a6 {
+	top: 0px;
+	left: 300px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-a7 {
+	top: 0px;
+	left: 350px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-a8 {
+	top: 0px;
+	left: 400px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-a9 {
+	top: 0px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b0 {
+	top: 50px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b1 {
+	top: 50px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b2 {
+	top: 50px;
+	left: 100px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b3 {
+	top: 50px;
+	left: 150px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b4 {
+	top: 50px;
+	left: 200px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b5 {
+	top: 50px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b6 {
+	top: 50px;
+	left: 300px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b7 {
+	top: 50px;
+	left: 350px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b8 {
+	top: 50px;
+	left: 400px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-b9 {
+	top: 50px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c0 {
+	top: 100px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c1 {
+	top: 100px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c2 {
+	top: 100px;
+	left: 100px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c3 {
+	top: 100px;
+	left: 150px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c4 {
+	top: 100px;
+	left: 200px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c5 {
+	top: 100px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c6 {
+	top: 100px;
+	left: 300px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c7 {
+	top: 100px;
+	left: 350px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c8 {
+	top: 100px;
+	left: 400px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-c9 {
+	top: 100px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d0 {
+	top: 150px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d1 {
+	top: 150px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d2 {
+	top: 150px;
+	left: 100px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d3 {
+	top: 150px;
+	left: 150px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d4 {
+	top: 150px;
+	left: 200px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d5 {
+	top: 150px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d6 {
+	top: 150px;
+	left: 300px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d7 {
+	top: 150px;
+	left: 350px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d8 {
+	top: 150px;
+	left: 400px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-d9 {
+	top: 150px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-e0 {
+	top: 200px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-e1 {
+	top: 200px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-e4 {
+	top: 200px;
+	left: 200px;
+	border-left: 1px solid blue;
+	position: absolute;
+}
+
+#ConquerLosAngeles-e5 {
+	top: 200px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-e8 {
+	top: 200px;
+	left: 400px;
+	border-left: 1px solid blue;
+	position: absolute;
+}
+
+#ConquerLosAngeles-e9 {
+	top: 200px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-f0 {
+	top: 250px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-f1 {
+	top: 250px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-f4 {
+	top: 250px;
+	left: 200px;
+	border-left: 1px solid blue;
+	position: absolute;
+}
+
+#ConquerLosAngeles-f5 {
+	top: 250px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-f8 {
+	top: 250px;
+	left: 400px;
+	border-left: 1px solid blue;
+	position: absolute;
+}
+
+#ConquerLosAngeles-f9 {
+	top: 250px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g0 {
+	top: 300px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g1 {
+	top: 300px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g2 {
+	top: 300px;
+	left: 100px;
+	border-top: 1px solid blue;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g3 {
+	top: 300px;
+	left: 150px;
+	border-top: 1px solid blue;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g4 {
+	top: 300px;
+	left: 200px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g5 {
+	top: 300px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g6 {
+	top: 300px;
+	left: 300px;
+	border-top: 1px solid blue;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g7 {
+	top: 300px;
+	left: 350px;
+	border-top: 1px solid blue;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g8 {
+	top: 300px;
+	left: 400px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-g9 {
+	top: 300px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h0 {
+	top: 350px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h1 {
+	top: 350px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h2 {
+	top: 350px;
+	left: 100px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h3 {
+	top: 350px;
+	left: 150px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h4 {
+	top: 350px;
+	left: 200px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h5 {
+	top: 350px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h6 {
+	top: 350px;
+	left: 300px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h7 {
+	top: 350px;
+	left: 350px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h8 {
+	top: 350px;
+	left: 400px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-h9 {
+	top: 350px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i0 {
+	top: 400px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i1 {
+	top: 400px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i2 {
+	top: 400px;
+	left: 100px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i3 {
+	top: 400px;
+	left: 150px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i4 {
+	top: 400px;
+	left: 200px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i5 {
+	top: 400px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i6 {
+	top: 400px;
+	left: 300px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i7 {
+	top: 400px;
+	left: 350px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i8 {
+	top: 400px;
+	left: 400px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-i9 {
+	top: 400px;
+	left: 450px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j0 {
+	top: 450px;
+	left: 0px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j1 {
+	top: 450px;
+	left: 50px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j2 {
+	top: 450px;
+	left: 100px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j3 {
+	top: 450px;
+	left: 150px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j4 {
+	top: 450px;
+	left: 200px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j5 {
+	top: 450px;
+	left: 250px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j6 {
+	top: 450px;
+	left: 300px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j7 {
+	top: 450px;
+	left: 350px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j8 {
+	top: 450px;
+	left: 400px;
+	position: absolute;
+}
+
+#ConquerLosAngeles-j9 {
+	top: 450px;
+	left: 450px;
+	position: absolute;
+}
+
+#gameViewBody {
 	padding-top: 4px;
 	padding-left: 12px;
 	padding-right: 12px;
