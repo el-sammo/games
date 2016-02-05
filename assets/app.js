@@ -4,10 +4,10 @@
 	var app = angular.module('app', [
 		'ngRoute', 'ui.bootstrap', 'angularPayments',
 		'angulartics', 'angulartics.google.analytics',
-		'uiGmapgoogle-maps'
+		'uiGmapgoogle-maps', 'ngDraggable'
 	]);
-	var $ = jQuery;
 
+	var $ = jQuery;
 
 	///
 	// Configuration

@@ -1029,7 +1029,9 @@ td {
 }
 
 .ConquerLosAngelesTokenLabel {
-	top: 6px;
+	top: -13px;
+	left: -2px;
+	text-align: center;
 	position: relative;
 }
 

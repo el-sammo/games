@@ -117,15 +117,23 @@
 			<div class="row">
 				<div class="col=md=12">
 					<div class="row" ng-repeat="piece in gameData.pieceDefinitions">
-						<div class="col-md-6">
+						<div class="col-md-2">
 							<h4>{{ucFirst(piece.name)}}</h4>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-10">
 							<div class="row">
-								<div class="col {{gameData.formattedName}}Token" id="{{piece.name}}Token{{$index + 1}}" ng-repeat="i in pieceCount(piece.count) track by $index">
-									<span class="{{gameData.formattedName}}TokenLabel">
-										<h3>{{ucTokenLabel(piece.name)}}</h3>
-									</span>
+								<div 
+									class="col-md-1 {{gameData.formattedName}}Token" 
+									id="{{piece.name}}Token{{$index + 1}}" 
+									ng-repeat="i in pieceCount(piece.count) track by $index"
+									ng-drag="true"
+									ng-drag-data="piece"
+									data-allow-transform="true"
+									draggable="false"
+								>
+									<div class="{{gameData.formattedName}}TokenLabel">
+										<h3>{{piece.descriptor}}</h3>
+									</div>
 								</div>
 							</div>
 						</div>
